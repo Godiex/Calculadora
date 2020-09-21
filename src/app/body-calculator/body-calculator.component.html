@@ -1,0 +1,33 @@
+
+<div class="card text-white bg-light mb-8" style="max-width: 21rem;">
+    <p>Casio Gt Force</p>
+    <div class="card text-white bg-light mb-8" style="max-width: 21rem;">
+        <div  class="pantalla" > 
+            <input type="text" readonly value="{{resultado}}">
+        </div>
+    </div>
+    <div class="card text-white bg-light mb-8" style="max-width: 21rem;">
+        <div class="card-body">
+            <div class="row">
+                <button *ngFor="let btn1 of botonesFila1" class="btn-lg btn-primary boton" (click)="AgregarExprecion(btn1)">
+                    {{btn1}}
+                </button>
+            </div>
+            <div class="row">
+                <button *ngFor="let btn2 of botonesFila2" class=" btn-lg btn-secondary boton"  (click)="AgregarExprecion(btn2)">
+                    {{btn2}}
+                </button>
+            </div>
+            <div class="row">
+                <button *ngFor="let btn3 of botonesFila3" class=" btn-lg btn-secondary boton"  (click)="AgregarExprecion(btn3)">
+                    {{btn3}}
+                </button>
+            </div>
+            <div class="row">
+                <button *ngFor="let btn4 of botonesFila4" class=" btn-lg btn-secondary boton"  (click)="AgregarExprecion(btn4)">
+                    {{btn4}}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
